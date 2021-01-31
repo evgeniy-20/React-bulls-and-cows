@@ -18,6 +18,10 @@
             render() {
                 return <div>текст</div>;
             }
+            render() {
+                const attr = 'block';
+                return <div id={attr}>текст</div>;
+            }
         }
         ReactDOM.render (
             <App/>,
