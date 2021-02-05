@@ -16,15 +16,14 @@
         class App extends React.Component {
             constructor() {
                 super();
-                this.state = {name: 'Yura', age: 27};
-            }
-            changeName() {
-                this.setState({name: 'Stas', age: 29});
+                this.state = {show: true, name: 'Иван'};
             }
             render() {
                 return <div>
-                    <p>имя: {this.state.name}, возраст: {this.state.age}</p>
-			        <button onClick={this.changeName.bind(this)}>сменить имя и возраст</button>
+                    <p>
+                        {this.state.hello ? 'Привет' : 'Пока'}, 
+				        {this.state.name}
+                    </p>
                 </div>
             }
         }
