@@ -24,7 +24,7 @@
             
             render() {
                 return <div>
-                    <p>текст инпута: {this.state.value}</p>
+                    <p>текст инпута: {this.state.value.toUpperCase()}</p>
                     <input value={this.state.value} onChange={this.handleChange.bind(this)} />
                 </div>
             }
