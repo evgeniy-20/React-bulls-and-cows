@@ -11,7 +11,7 @@ export default class Text extends React.Component {
     
     render() {
         return <div>
-            <p> ФИО: {this.state.value.toUpperCase()}</p>
+            <p> ИО: {this.state.value.toUpperCase()}</p>
             <input value={this.state.value} onChange={this.handleChange.bind(this)} />
         </div>
     }
